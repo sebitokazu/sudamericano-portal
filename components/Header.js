@@ -72,6 +72,11 @@ export default function Header() {
                 Estadio
               </span>
             </Link>
+            <Link href="#entradas">
+              <span className="mr-11 pr-2 cursor-pointer text-gray-100 hover:text-gray-200 font-semibold tr04">
+                Entradas
+              </span>
+            </Link>
             <Link href="#redes">
               <span className="mr-11 pr-2 cursor-pointer text-gray-100 hover:text-gray-200 font-semibold tr04">
                 Contacto

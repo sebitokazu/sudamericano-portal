@@ -31,6 +31,16 @@ export default function Main() {
               endAt={"2022-06-04 00:00:00"} // Date/Time
             />
           </div>
+          <div className="flex flex-row justify-center font-semibold  text-center pt-8">
+            <Link href="#entradas">
+              <button
+                type="button"
+                className="px-5 py-2.5 text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 rounded-lg text-xl"
+              >
+                Consegui tus entradas
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
       <section id="equipos" className="pt-40 -mt-40 mb-20">
@@ -141,7 +151,7 @@ export default function Main() {
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
-              <Image
+                <Image
                   src="/location-pin.png"
                   alt="Pin de ubicacion"
                   className="white-icon"
@@ -220,34 +230,11 @@ export default function Main() {
           </div>
         </div>
       </section>
-      {/* <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
-        <div className="ktq4">
-          <img src="https://nine4.app/images/nine4-3.png"></img>
-          <h3 className="pt-3 font-semibold text-lg text-white">
-            Lorem ipsum dolor sit amet
-          </h3>
-          <p className="pt-2 value-text text-md text-gray-200 fkrr1">
-            Fusce pharetra ligula mauris, quis faucibus lectus elementum vel.
-            Nullam vehicula, libero at euismod tristique, neque ligula faucibus
-            urna, quis ultricies massa enim in nunc. Vivamus ultricies, quam ut
-            rutrum blandit, turpis massa ornare velit, in sodales tellus ex nec
-            odio.
-          </p>
-        </div>
-        <div className="ktq4">
-          <img src="https://nine4.app/images/nine4-3.png"></img>
-          <h3 className="pt-3 font-semibold text-lg text-white">
-            Lorem ipsum dolor sit amet
-          </h3>
-          <p className="pt-2 value-text text-md text-gray-200 fkrr1">
-            Fusce pharetra ligula mauris, quis faucibus lectus elementum vel.
-            Nullam vehicula, libero at euismod tristique, neque ligula faucibus
-            urna, quis ultricies massa enim in nunc. Vivamus ultricies, quam ut
-            rutrum blandit, turpis massa ornare velit, in sodales tellus ex nec
-            odio.
-          </p>
-        </div>
-      </div> */}
+      <section id="entradas" className="pt-40 -mt-40">
+        <h2 className="pt-12 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-100 lg:text-7xl md:text-6xl">
+          Conseguí tus entradas
+        </h2>
+      </section>
       <section className="relative pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-36">
