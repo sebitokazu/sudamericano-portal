@@ -415,7 +415,6 @@ export default function Main() {
               href="https://www.instagram.com/softbol.sudamericano.argentina/"
               rel="noopener noreferrer"
               target="_blank"
-              className="invisible md:visible"
             >
               <svg
                 title="Instagram"
