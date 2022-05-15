@@ -14,6 +14,10 @@ body {
   background: linear-gradient(135deg, rgba(4,32,114,1) 0%, rgba(76,133,189,1) 50%, rgba(4,32,114,1) 100%);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -102,7 +106,7 @@ a {
   font-family: "Inter", sans-serif;
 }
 
-.ig-icon {
+.white-icon {
   filter: invert(98%) sepia(2%) saturate(161%) 
     hue-rotate(318deg) brightness(116%) contrast(100%);
 }

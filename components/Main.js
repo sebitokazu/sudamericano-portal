@@ -33,32 +33,28 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section id="equipos">
-        <h2 className="pt-40 -mt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-100 lg:text-7xl md:text-6xl">
+      <section id="equipos" className="pt-40 -mt-40 mb-20">
+        <h2 className="pt-10 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-100 lg:text-7xl md:text-6xl">
           Equipos
         </h2>
-        <div className="flex flex-row flex-wrap justify-center mx-auto gap-4 max-w-s py-12">
+        <div className="flex flex-row flex-wrap justify-center mx-auto gap-4 max-w-s pt-16">
           <div className="ktq4 text-center">
-          <Image
+            <Image
               alt="Bandera de Argentina"
               width="240"
               height="240"
               src="/argentina-circular.png"
             />
-            <h3 className="pt-3 font-semibold text-lg text-white">
-             Argentina
-            </h3>
+            <h3 className="pt-3 font-semibold text-lg text-white">Argentina</h3>
           </div>
           <div className="ktq4 text-center">
-          <Image
+            <Image
               alt="Bandera de Brasil"
               width="240"
               height="240"
               src="/brazil-circular.png"
             />
-            <h3 className="pt-3 font-semibold text-lg text-white">
-              Brasil
-            </h3>
+            <h3 className="pt-3 font-semibold text-lg text-white">Brasil</h3>
           </div>
           <div className="ktq4 text-center">
             <Image
@@ -67,9 +63,7 @@ export default function Main() {
               height="240"
               src="/peru-circular.png"
             />
-            <h3 className="pt-3 font-semibold text-lg text-white">
-              Peru
-            </h3>
+            <h3 className="pt-3 font-semibold text-lg text-white">Peru</h3>
           </div>
           <div className="ktq4 text-center">
             <Image
@@ -78,9 +72,7 @@ export default function Main() {
               height="240"
               src="/guatemala-circular.png"
             />
-            <h3 className="pt-3 font-semibold text-lg text-white">
-             Guatemala
-            </h3>
+            <h3 className="pt-3 font-semibold text-lg text-white">Guatemala</h3>
           </div>
           <div className="ktq4 text-center">
             <Image
@@ -89,13 +81,146 @@ export default function Main() {
               height="230"
               src="/curacao-circular.png"
             />
-            <h3 className="pt-3 font-semibold text-lg text-white">
-              Curazao
-            </h3>
+            <h3 className="pt-3 font-semibold text-lg text-white">Curazao</h3>
           </div>
         </div>
       </section>
-      <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
+      <section id="estadio" className="pt-40 -mt-40">
+        <h2 className="pt-12 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-100 lg:text-7xl md:text-6xl">
+          Estadio de la Victoria
+        </h2>
+        <div className="container px-5 py-12 mx-auto flex flex-wrap">
+          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            <Image
+              alt="Estadio de la victoria"
+              className="object-cover object-center h-full w-full"
+              src="/vercel.svg"
+              width="460"
+              height="460"
+            />
+          </div>
+          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-lime-200 mb-5">
+                <Image
+                  src="/softball-ball.png"
+                  alt="Pelota de softbol"
+                  className="white-icon"
+                  width="30"
+                  height="30"
+                />
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-slate-100 text-xl font-bold mb-3">
+                  Templo del Softbol
+                </h2>
+                <p className="leading-relaxed text-base text-slate-300">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a
+                  href="https://www.instagram.com/estadiodelavictoria.softbol/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="mt-3 text-lime-300 hover:text-cyan-100 inline-flex items-center"
+                >
+                  Conoce mas
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
+              <Image
+                  src="/location-pin.png"
+                  alt="Pin de ubicacion"
+                  className="white-icon"
+                  width="25"
+                  height="25"
+                />
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-slate-100 text-xl font-bold mb-3">
+                  Como llegar
+                </h2>
+                <p className="leading-relaxed text-base text-slate-300">
+                  A pata, bondi, etc...
+                </p>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=estadio+de+la+victoria+-+softbol"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="mt-3 text-lime-300 hover:text-cyan-100 inline-flex items-center"
+                >
+                  Ver en Maps
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {/* <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-white text-lg title-font font-medium mb-3">
+                  Neptune
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-400 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+      {/* <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
         <div className="ktq4">
           <img src="https://nine4.app/images/nine4-3.png"></img>
           <h3 className="pt-3 font-semibold text-lg text-white">
@@ -122,7 +247,7 @@ export default function Main() {
             odio.
           </p>
         </div>
-      </div>
+      </div> */}
       <section className="relative pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-36">
