@@ -8,7 +8,7 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 25);
+      setScroll(window.scrollY > 50);
     });
   }, []);
 
