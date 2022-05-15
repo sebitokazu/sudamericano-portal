@@ -1,23 +1,30 @@
 import FlipCountdown from "@rumess/react-flip-countdown";
 import Image from "next/image";
 import Link from "next/link";
+import useWindowDimensions from "../hooks/useWindowDimension";
 
 export default function Main() {
+  const { width, height } = useWindowDimensions();
   return (
     <div className="text-gray-600 body-font pt-10">
       <section id="main-title" className="h-screen">
-        <div className="max-w-5xl pt-52 pb-16 mx-auto">
-          <h1 className="text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
-            XV Sudamericano de Softbol Femenino Mayor
-          </h1>
-          <h2 className="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-slate-400 text-center">
-            4 al 11 de junio
-            <br />
-            Estadio de la Victoria
-            <br />
-            Buenos Aires, Argentina
-          </h2>
-          <div className="py-8 font-semibold text-slate-300">
+        <div className="container px-5 pt-32 mx-auto">
+          <div className="flex flex-col w-full mb-2 text-center md:text-center ">
+            <h1 className="mb-2 text-3xl font-bold tracking-tighter text-white lg:text-8xl md:text-7xl">
+              XV Sudamericano de Softbol Femenino Mayor
+            </h1>
+            <br></br>
+            <h2 className="text-2xl mx-auto font-4 font-semibold lh-6 ld-04 pb-11 text-slate-400 text-center">
+              4 al 11 de junio
+              <br />
+              Estadio de la Victoria
+              <br />
+              Buenos Aires, Argentina
+            </h2>
+          </div>
+        </div>
+        <div className="container px-5 py-8 mx-auto lg:px-4 lg:py-4 font-semibold text-slate-300 text-xs lg:text-base">
+          {width > 760 ? (
             <FlipCountdown
               size="medium"
               theme="dark"
@@ -30,17 +37,30 @@ export default function Main() {
               secondTitle="Segundos"
               endAt={"2022-06-04 00:00:00"} // Date/Time
             />
-          </div>
-          <div className="flex flex-row justify-center font-semibold  text-center pt-8">
-            <Link href="#entradas">
-              <button
-                type="button"
-                className="px-5 py-2.5 text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 rounded-lg text-xl"
-              >
-                Consegui tus entradas
-              </button>
-            </Link>
-          </div>
+          ) : (
+            <FlipCountdown
+              size="small"
+              theme="dark"
+              hideYear
+              hideMonth
+              endAtZero
+              dayTitle="Dias"
+              hourTitle="Horas"
+              minuteTitle="Minutos"
+              secondTitle="Segundos"
+              endAt={"2022-06-04 00:00:00"} // Date/Time
+            />
+          )}
+        </div>
+        <div className="container px-5 py-8 mx-auto lg:px-4 lg:py-4 font-semibold  text-center pt-8">
+          <Link href="#entradas">
+            <button
+              type="button"
+              className="px-5 py-2.5 text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 rounded-lg text-xl"
+            >
+              Consegui tus entradas
+            </button>
+          </Link>
         </div>
       </section>
       <section id="equipos" className="pt-40 -mt-40 mb-20">
@@ -76,7 +96,7 @@ export default function Main() {
                 height="240"
                 src="/peru-circular.png"
               />
-              <h3 className="pt-3 font-semibold text-lg text-white">Peru</h3>
+              <h3 className="pt-3 font-semibold sm:text-lg text-sm text-white">Peru</h3>
             </div>
             <div className="ktq4 text-center">
               <Image

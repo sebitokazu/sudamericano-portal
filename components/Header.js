@@ -18,7 +18,7 @@ export default function Header() {
         scroll ? "fixed top-0 w-full z-50 clearNav" : "fixed top-0 w-full z-5"
       }
     >
-      <div className="max-w-5xl mx-auto flex flex-wrap flex-col md:flex-row">
+      <div className="flex flex-col max-w-6xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between p-3 md:p-1">
           <Link
             href="/"
