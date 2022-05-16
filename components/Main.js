@@ -53,7 +53,7 @@ export default function Main() {
             />
           )}
         </div>
-        <div className="container px-5 py-8 mx-auto lg:px-4 lg:py-4 font-semibold  text-center pt-8">
+        <div className="container px-5 md:my-8 py-8 mx-auto lg:px-4 lg:py-4 font-semibold  text-center pt-8">
           <Link href="#entradas">
             <button
               type="button"
@@ -129,18 +129,18 @@ export default function Main() {
           <h2 className="text-2xl font-semibold tracking-tighter text-center text-gray-100 lg:text-7xl md:text-6xl">
             Estadio de la Victoria
           </h2>
-          <div className="container px-5 py-12 mx-auto flex flex-wrap">
-            <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+          <div className="container px-5 py-12 mx-auto flex flex-wrap justify-center">
+            <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden lg:self-center">
               <Image
                 alt="Estadio de la victoria"
                 className="object-cover object-center h-full w-full"
-                src="/vercel.svg"
-                width="460"
-                height="460"
+                src="/estadio.jpeg"
+                width="640"
+                height="359"
               />
             </div>
-            <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-              <div className="flex flex-col mb-10 lg:items-start items-center">
+            <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center self-center">
+              {/* <div className="flex flex-col mb-10 lg:items-start items-center">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-lime-200 mb-5">
                   <Image
                     src="/softball-ball.png"
@@ -155,8 +155,6 @@ export default function Main() {
                     Templo del Softbol
                   </h2>
                   <p className="leading-relaxed text-base text-slate-300">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
                   </p>
                   <a
                     href="https://www.instagram.com/estadiodelavictoria.softbol/"
@@ -164,7 +162,7 @@ export default function Main() {
                     target="_blank"
                     className="mt-3 text-lime-300 hover:text-cyan-100 inline-flex items-center"
                   >
-                    Conoce mas
+                    Conoce más
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -178,7 +176,7 @@ export default function Main() {
                     </svg>
                   </a>
                 </div>
-              </div>
+              </div> */}
               <div className="flex flex-col mb-10 lg:items-start items-center">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
                   <Image
@@ -191,12 +189,11 @@ export default function Main() {
                 </div>
                 <div className="flex-grow">
                   <h2 className="text-slate-100 text-xl font-bold mb-3">
-                    Como llegar
+                    Dirección
                   </h2>
                   <p className="leading-relaxed text-base text-slate-300">
-                    A pata, bondi, etc...
+                      Ana Maria Janer 2501, Aldo Bonzi, Buenos Aires, Argentina
                   </p>
-
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=estadio+de+la+victoria+-+softbol"
                     rel="noopener noreferrer"
