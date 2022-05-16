@@ -2,13 +2,14 @@ import FlipCountdown from "@rumess/react-flip-countdown";
 import Image from "next/image";
 import Link from "next/link";
 import useWindowDimensions from "../hooks/useWindowDimension";
+import TicketsTable from "./TicketsTable";
 
 export default function Main() {
   const { width, height } = useWindowDimensions();
   return (
     <div className="text-gray-600 body-font pt-10">
       <section id="main-title" className="h-screen">
-        <div className="container px-5 pt-32 mx-auto">
+        <div className="container px-5 pt-52 md:pt-32 mx-auto">
           <div className="flex flex-col w-full mb-2 text-center md:text-center ">
             <h1 className="mb-2 text-3xl font-bold tracking-tighter text-white lg:text-8xl md:text-7xl">
               XV Sudamericano de Softbol Femenino Mayor
@@ -267,140 +268,7 @@ export default function Main() {
           </h2>
           <div className="container px-5 pt-12 mx-auto">
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-              <table className="w-full text-sm text-left text-white dark:text-white">
-                <thead className="text-xs text-center text-white uppercase bg-gray-50 dark:bg-suda-blue dark:text-white">
-                  <tr>
-                    <th scope="col" className="px-6 py-3">
-                      Categoria
-                    </th>
-                    <th scope="col" className="px-6 py-3">
-                      Precio
-                    </th>
-                    <th scope="col" className="px-6 py-3">
-                      Incluye
-                    </th>
-                    <th scope="col" className="px-6 py-3">
-                      Control
-                    </th>
-                    <th scope="col" className="px-6 py-3">
-                      Contacto
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700 text-center">
-                    <th
-                      scope="row"
-                      className="px-6 py-4 font-semibold text-base text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      Diaria
-                    </th>
-                    <td className="px-6 py-4">
-                      U$6 <br /> $800
-                    </td>
-                    <td className="px-6 py-4">1 jornada</td>
-                    <td className="px-6 py-4">Entrada en mano</td>
-                    <td className="px-6 py-4">En la boleteria al ingreso</td>
-                  </tr>
-                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700 text-center">
-                    <th
-                      scope="row"
-                      className="px-6 py-4 font-semibold text-base text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      Diaria anticipada
-                    </th>
-                    <td className="px-6 py-4">
-                      U$5 <br /> $700
-                    </td>
-                    <td className="px-6 py-4">1 jornada con fecha asignada</td>
-                    <td className="px-6 py-4">Admision por lista y pulsera</td>
-                    <td className="px-6 py-4">
-                      <a
-                        href="https://wa.me/5491156093363?text=Hola!%20Quisiera%20consultar%20por%20la%20entrada%20Diaria%20Anticipada.%20Muchas%20Gracias!"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        className="font-medium text-lime-300  hover:underline"
-                      >
-                        Wpp: +54 9 1156093363
-                      </a>
-                    </td>
-                  </tr>
-                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700 text-center">
-                    <th
-                      scope="row"
-                      className="px-6 py-4 font-semibold text-base text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      Fin de Semana 2+1
-                    </th>
-                    <td className="px-6 py-4">
-                      U$10 <br /> $1500
-                    </td>
-                    <td className="px-6 py-4">
-                      3 jornadas <br /> 3,4 y 5 de junio ó <br /> 4,5 + (1 a
-                      eleccion)
-                    </td>
-                    <td className="px-6 py-4">Admision por lista y pulsera</td>
-                    <td className="px-6 py-4">
-                      <a
-                        href="https://wa.me/5491126486319?text=Hola!%20Quisiera%20consultar%20por%20la%20entrada%20Fin%20de%20Semana%202%2B1.%20Muchas%20Gracias!"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        className="font-medium text-lime-300  hover:underline"
-                      >
-                        Wpp: +54 9 1126486319
-                      </a>
-                    </td>
-                  </tr>
-                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700 text-center">
-                    <th
-                      scope="row"
-                      className="px-6 py-4 font-semibold text-base text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      Fan Kit
-                    </th>
-                    <td className="px-6 py-4">
-                      U$30 <br /> $3750
-                    </td>
-                    <td className="px-6 py-4">
-                      Abono total <br /> 4 al 11 de junio + 1 remera
-                    </td>
-                    <td className="px-6 py-4">Admision por lista y pulsera</td>
-                    <td className="px-6 py-4">
-                      <a
-                        href="https://wa.me/5491126486319?text=Hola!%20Quisiera%20consultar%20por%20el%20Fan%20Kit.%20Muchas%20Gracias!"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        className="font-medium text-lime-300 hover:underline"
-                      >
-                        Wpp: +54 9 1126486319
-                      </a>
-                    </td>
-                  </tr>
-                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700 text-center">
-                    <th
-                      scope="row"
-                      className="px-6 py-4 font-semibold text-base text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      Play Off
-                    </th>
-                    <td className="px-6 py-4">
-                      U$12 <br /> $1800
-                    </td>
-                    <td className="px-6 py-4">10 y 11 de junio</td>
-                    <td className="px-6 py-4">Admision por lista y pulsera</td>
-                    <td className="px-6 py-4">
-                      <a
-                        href="https://wa.me/5491126486319?text=Hola!%20Quisiera%20consultar%20por%20la%20entrada%20Play%20Off.%20Muchas%20Gracias!"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        className="font-medium text-lime-300 hover:underline"
-                      >
-                        Wpp: +54 9 1126486319
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <TicketsTable/>
             </div>
           </div>
         </div>

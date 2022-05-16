@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="pb-4 text-gray-200">
       <section id="#sponsors">
         <div className="container px-5 mx-auto lg:px-24 ">
-          <div className="flex flex-col w-full mb-4 text-left lg:text-center">
+          <div className="flex flex-col w-full mb-4 text-center">
             <h1 className="mb-8 text-2xl font-bold text-white ">
               Nos acompañan
             </h1>
