@@ -67,6 +67,11 @@ export default function Header() {
                 Equipos
               </span>
             </Link>
+            <Link href="#cronograma">
+              <span className="mr-11 pr-2 cursor-pointer text-gray-100 hover:text-gray-200 font-semibold tr04">
+                Cronograma
+              </span>
+            </Link>
             <Link href="#estadio">
               <span className="mr-11 pr-2 cursor-pointer text-gray-100 hover:text-gray-200 font-semibold tr04">
                 Estadio

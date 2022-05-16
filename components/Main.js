@@ -124,6 +124,21 @@ export default function Main() {
           </div>
         </div>
       </section>
+      <section id="cronograma" className="pt-40 -mt-40 mb-20">
+        <div className="max-w-6xl pt-10 pb-4 mx-auto">
+          <h2 className=" mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-100 lg:text-7xl md:text-6xl">
+            Cronograma
+          </h2>
+          <div className="flex flex-row flex-wrap justify-center mx-auto pt-16 px-8">
+            <Image
+            src="/cronograma.jpeg"
+            alt="Cronograma del Sudamericano"
+            width="650"
+            height="650"
+            />
+          </div>
+        </div>
+      </section>
       <section id="estadio" className="pt-40 -mt-40">
         <div className="max-w-6xl pt-12 mb-1 pb-16 mx-auto">
           <h2 className="text-2xl font-semibold tracking-tighter text-center text-gray-100 lg:text-7xl md:text-6xl">
